@@ -1,0 +1,671 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(19, 43, 90);
+}
+
+.header {
+  height: 130px;
+  width: 670px;
+  border: 2px solid rgb(98, 102, 119);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  width: 110px;
+  padding-left: 18px;
+}
+
+.name1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 3px 3px black;
+}
+.rock {
+  position: relative;
+  top: 8px;
+}
+
+.scissor {
+  position: relative;
+  bottom: 8px;
+}
+
+.reset {
+  font-size: 18px;
+  font-weight: 550;
+  font-family: monospace;
+  border-radius: 10px;
+  color: rgb(18, 40, 82);
+  padding: 3px;
+  position: relative;
+  left: 10px;
+  top: 30px;
+  border: 3px solid yellow;
+  cursor: pointer;
+}
+.reset:hover {
+  background: rgba(255, 253, 253, 0.932);
+  border: 3px solid green;
+  color: red;
+}
+.scores {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.score {
+  height: 100px;
+  width: 150px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  position: relative;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score1,
+.score2 {
+  color: rgb(18, 40, 82);
+  font-size: 60px;
+  font-weight: 550;
+  font-family: Courier, monospace;
+}
+
+.your-score,
+.comp-score {
+  color: rgba(85, 85, 210, 0.834);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.images1 {
+  height: 500px;
+  width: 800px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.images2 {
+  height: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  background-color: rgba(53, 109, 212, 0.962);
+  border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+  cursor: pointer;
+}
+
+.reverse1 {
+  position: relative;
+  left: 30px;
+}
+.reverse1-1 {
+  position: relative;
+  top: 92px;
+  right: 82px;
+  animation: reverse1-1 0.5s normal 0s 1 forwards;
+}
+
+@keyframes reverse1-1 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(112px, -92px) scale(1);
+  }
+}
+.reverse2 {
+  background-color: rgb(226, 167, 5);
+  border-bottom: 4px solid rgb(152, 113, 3);
+  position: relative;
+  right: 203px;
+}
+.reverse2-2 {
+  position: relative;
+  top: 95px;
+  right: 552px;
+  animation: reverse2-2 0.5s normal 0s 1 forwards;
+}
+
+@keyframes reverse2-2 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(349px, -95px) scale(1);
+  }
+}
+
+.reverse3 {
+  position: relative;
+  bottom: 169px;
+  right: 80px;
+  background-color: rgb(243, 72, 72);
+  border-bottom: 4px solid rgb(186, 49, 49);
+}
+
+.reverse3-3 {
+  position: relative;
+  bottom: 261px;
+  right: 310px;
+  animation: reverse3-3 0.5s normal 0s 1 forwards;
+}
+@keyframes reverse3-3 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(230px, 92px) scale(1);
+  }
+}
+
+.white {
+  height: 120px;
+  width: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 7px solid rgba(215, 208, 208, 0.491);
+}
+
+img {
+  width: 50px;
+  color: green;
+}
+
+.triangle {
+  height: 350px;
+  width: 305px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 80px;
+  z-index: -1;
+}
+
+svg {
+  background-color: rgb(19, 43, 90);
+}
+
+.hide {
+  display: none;
+}
+.zero {
+  height: 252px;
+  width: 252px;
+  border-radius: 50%;
+  font-size: 95px;
+  font-weight: 550;
+  font-family: Courier, monospace;
+  color: rgb(18, 40, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 250px;
+  right: 450px;
+}
+.countBox {
+  animation: countBox 0.25s normal 0s 1 forwards;
+}
+
+@keyframes countBox {
+  to {
+    transform: translateX(120px);
+  }
+}
+
+.image,
+.dublicateImage1,
+.dublicateImage2,
+.dublicateImage3,
+.dublicateImage4,
+.dublicateImage5,
+.dublicateImage6 {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dublicateImage1 {
+  background-color: rgba(53, 109, 212, 0.962);
+  border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+  position: absolute;
+  left: 390px;
+  animation: position1 0.5s normal 0s 1 forwards;
+}
+@keyframes position1 {
+  to {
+    transform: translate(-10px, 90px) scale(1.5);
+  }
+}
+
+.position1 {
+  position: absolute;
+  top: 300px;
+  animation: direction 0.25s normal 0s 1 forwards;
+}
+@keyframes direction {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(-118px) scale(1.5);
+  }
+}
+
+.dublicateImage2 {
+  position: absolute;
+  right: 562px;
+  background-color: rgb(226, 167, 5);
+  border-bottom: 4px solid rgb(152, 113, 3);
+  border-radius: 50%;
+  animation: position2 0.5s normal 0s 1 forwards;
+}
+@keyframes position2 {
+  to {
+    transform: translate(-243px, 90px) scale(1.5);
+  }
+}
+
+.position2 {
+  position: absolute;
+  left: 390px;
+  top: 300px;
+  animation: direction 0.25s normal 0s 1 forwards;
+}
+
+.dublicateImage3 {
+  background-color: rgb(243, 72, 72);
+  border-bottom: 4px solid rgb(186, 49, 49);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 95px;
+  right: 673px;
+  animation: position3 0.5s normal 0s 1 forwards;
+}
+@keyframes position3 {
+  to {
+    transform: translate(-132px, -82px) scale(1.5);
+  }
+}
+.position3 {
+  position: absolute;
+  bottom: 175px;
+  left: 395px;
+  animation: direction 0.25s normal 0s 1 forwards;
+}
+
+.dublicateImage4,
+.dublicateImage5,
+.dublicateImage6 {
+  background-color: rgba(53, 109, 212, 0.962);
+  border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+  position: absolute;
+  top: 292px;
+  right: 373px;
+  transform: scale(1.5);
+}
+
+.dublicateImage5 {
+  background-color: rgb(226, 167, 5);
+  border-bottom: 4px solid rgb(152, 113, 3);
+}
+.dublicateImage6 {
+  background-color: rgb(243, 72, 72);
+  border-bottom: 4px solid rgb(186, 49, 49);
+}
+
+.playAgain {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  right: 50px;
+  top: 110px;
+  z-index: 1;
+  text-align: center;
+}
+
+.winDraw {
+  font-family: monospace;
+  font-weight: 550;
+  font-size: 50px;
+  letter-spacing: -1px;
+}
+
+.Again {
+  width: 250px;
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: 550;
+  padding: 15px;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(42, 42, 111);
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+  .header {
+    height: 65px;
+    width: 350px;
+    margin-top: 10px;
+    position: relative;
+    left: 75px;
+    top: 10px;
+  }
+
+  .names {
+    height: 70px;
+    width: 55px;
+    padding-left: 10px;
+  }
+
+  .name1 {
+    font-size: 17px;
+  }
+  .rock {
+    position: relative;
+    top: 4px;
+  }
+
+  .scissor {
+    position: relative;
+    bottom: 4px;
+  }
+  .scores {
+    height: 60px;
+    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .score {
+    height: 50px;
+    width: 78px;
+    position: relative;
+    right: 10px;
+  }
+
+  .score1,
+  .score2 {
+    font-size: 30px;
+  }
+
+  .your-score,
+  .comp-score {
+    font-size: 8px;
+  }
+
+  .reset {
+    position: relative;
+    padding: 0px;
+    left: 10px;
+    top: 15px;
+    font-size: 10px;
+  }
+  .images1 {
+    height: 100%;
+    width: 50%;
+    margin-top: 20px;
+    position: relative;
+    left: 130px;
+  }
+
+  .images2 {
+    height: 200px;
+    width: 500px;
+  }
+  .triangle {
+    height: 50%;
+    width: 75%;
+    position: relative;
+    bottom: 6px;
+    left: auto;
+    right: 15px;
+  }
+  .reverse1 {
+    position: relative;
+    left: auto;
+    right: 85px;
+    top: 20px;
+  }
+  .reverse1-1 {
+    position: relative;
+    top: 56px;
+    right: 135px;
+    animation: reverse1-1 0.5s normal 0s 1 forwards;
+  }
+
+  @keyframes reverse1-1 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(50px, -36px) scale(1);
+    }
+  }
+
+  .reverse2 {
+    position: relative;
+    right: auto;
+    bottom: 170px;
+    left: 95px;
+  }
+
+  .reverse2-2 {
+    position: relative;
+    top: auto;
+    bottom: 134px;
+    right: 91px;
+    animation: reverse2-2 0.5s normal 0s 1 forwards;
+  }
+
+  @keyframes reverse2-2 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(186px, -36px) scale(1);
+    }
+  }
+  .reverse3 {
+    position: relative;
+    bottom: 66px;
+    right: 60px;
+  }
+
+  .reverse3-3 {
+    position: relative;
+    bottom: 129px;
+    right: 180px;
+    animation: reverse3-3 0.5s normal 0s 1 forwards;
+  }
+  @keyframes reverse3-3 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(120px, 63px) scale(1);
+    }
+  }
+
+  .white {
+    height: 65px;
+    width: 65px;
+    border-top: 4px solid rgba(215, 208, 208, 0.491);
+  }
+
+  img {
+    width: 30px;
+  }
+
+  .image,
+  .dublicateImage1,
+  .dublicateImage2,
+  .dublicateImage3,
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    height: 88px;
+    width: 88px;
+  }
+
+  .playAgain {
+    height: 50%;
+    position: relative;
+    right: 32px;
+    top: 55px;
+  }
+  .winDraw {
+    font-size: 24px;
+  }
+  .Again {
+    width: 130px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .zero {
+    height: 107px;
+    width: 107px;
+    font-size: 50px;
+    top: 52px;
+    right: auto;
+    left: 50px;
+  }
+  .zero1 {
+    position: relative;
+    left: 20px;
+  }
+  .countBox {
+    animation: countBox 0.25s normal 0s 1 forwards;
+  }
+  @keyframes countBox {
+    to {
+      transform: translateX(64%);
+    }
+  }
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    top: 60px;
+    left: 155px;
+    transform: scale(1.2);
+  }
+  .dublicateImage5 {
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
+  }
+  .dublicateImage6 {
+    background-color: rgb(243, 72, 72);
+    border-bottom: 4px solid rgb(186, 49, 49);
+  }
+
+  .dublicateImage1 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    position: absolute;
+    left: auto;
+    right: 166px;
+    top: 20px;
+  }
+  @keyframes position1 {
+    to {
+      transform: translate(1px, 35px) scale(1.2);
+    }
+  }
+  .position1 {
+    top: 58px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+  @keyframes direction {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(-50px) scale(1.2);
+    }
+  }
+
+  .dublicateImage2 {
+    position: absolute;
+    left: 59px;
+    top: 22px;
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
+    border-radius: 50%;
+  }
+  @keyframes position2 {
+    to {
+      transform: translate(-136px, 35px) scale(1.2);
+    }
+  }
+  .position2 {
+    position: absolute;
+    left: auto;
+    right: 168px;
+    top: 60px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+  .dublicateImage3 {
+    background-color: rgb(243, 72, 72);
+    border-bottom: 4px solid rgb(186, 49, 49);
+    border-radius: 50%;
+    position: absolute;
+    bottom: auto;
+    top: 126px;
+    right: 97px;
+  }
+  @keyframes position3 {
+    to {
+      transform: translate(-70px, -63px) scale(1.2);
+    }
+  }
+  .position3 {
+    position: absolute;
+    top: 63px;
+    left: auto;
+    right: 167px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <div class="names">
+          <p class="rock name1">ROCK</p>
+          <p class="paper name1">PAPER</p>
+          <p class="scissor name1">SCISSORS</p>
+        </div>
+        <button class="reset">RESET</button>
+        <div class="scores">
+          <div class="score">
+            <div class="your-score">YOUR SCORE</div>
+            <p class="score1">0</p>
+          </div>
+          <div class="score">
+            <div class="comp-score">OPPONENT SCORE</div>
+            <p class="score2">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="images1">
+        <div class="images2">
+          <div class="image reverse1" id="paper">
+            <div class="white">
+              <img src="paper.jpg" alt="paper" />
+            </div>
+          </div>
+
+          <div class="triangle">
+            <!-- svg ki height or width hamasha fix hoti hay us fix ko htanay kay liye ye do attributes laganay prtay hay xmlns ,viewBox
+              -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 277">
+              <path
+                fill="none"
+                stroke="#000"
+                stroke-width="15"
+                d="M291.5 7.5H4.574c3.119 0 52.416 84.667 147.892 254L291.5 7.5z"
+                opacity=".2"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="image reverse2"
+            id="scissor"
+            style="
+              background-color: rgb(226, 167, 5);
+              border-bottom: 4px solid rgb(152, 113, 3);
+            "
+          >
+            <div class="white">
+              <img src="scissor.jpg" alt="scissor" />
+            </div>
+          </div>
+
+          <div
+            class="image reverse3"
+            id="rock"
+            style="
+              background-color: rgb(243, 72, 72);
+              border-bottom: 4px solid rgb(186, 49, 49);
+            "
+          >
+            <div class="white">
+              <img src="rock.jpg" alt="rock" />
+            </div>
+          </div>
+        </div>
+
+        <div class="timeBox hide">
+          <div class="zero">3</div>
+        </div>
+        <div class="playAgain hide">
+          <div class="winDraw"></div>
+          <button class="Again">PLAY AGAIN</button>
+        </div>
+
+        <div class="image1 hide">
+          <div class="dublicateImage1">
+            <div class="white">
+              <img src="paper.jpg" alt="paper" />
+            </div>
+          </div>
+        </div>
+        <div class="image2 hide">
+          <div class="dublicateImage2" id>
+            <div class="white">
+              <img src="scissor.jpg" alt="scissor" />
+            </div>
+          </div>
+        </div>
+        <div class="image3 hide">
+          <div class="dublicateImage3">
+            <div class="white">
+              <img src="rock.jpg" alt="rock" />
+            </div>
+          </div>
+        </div>
+        <div class="image4 hide">
+          <div class="dublicateImage4">
+            <div class="white">
+              <img src="paper.jpg" alt="paper" />
+            </div>
+          </div>
+        </div>
+        <div class="image5 hide">
+          <div class="dublicateImage5">
+            <div class="white">
+              <img src="scissor.jpg" alt="scissor" />
+            </div>
+          </div>
+        </div>
+        <div class="image6 hide">
+          <div class="dublicateImage6">
+            <div class="white">
+              <img src="rock.jpg" alt="rock" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js "></script>
+  </body>
+</html>
