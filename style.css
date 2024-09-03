@@ -202,7 +202,7 @@ svg {
   background-color: rgba(53, 109, 212, 0.962);
   border-bottom: 4px solid rgba(12, 65, 163, 0.984);
   position: absolute;
-  left: 388px;
+  left: 387px;
   animation: position1 0.5s normal 0s 1 forwards;
 }
 @keyframes position1 {
