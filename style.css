@@ -467,6 +467,31 @@ svg {
     left: auto;
     right: 15px;
   }
+  .dublicateImage1 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    position: absolute;
+    left: auto;
+    right: 166px;
+    top: 20px;
+  }
+  @keyframes position1 {
+    to {
+      transform: translate(1px, 37px) scale(1.2);
+    }
+  }
+  .position1 {
+    top: 58px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+  @keyframes direction {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(-50px) scale(1.2);
+    }
+  }
   .reverse1 {
     position: relative;
     left: auto;
@@ -475,7 +500,7 @@ svg {
   }
   .reverse1-1 {
     position: relative;
-    top: 56px;
+    top: 58px;
     right: 135px;
     animation: reverse1-1 0.5s normal 0s 1 forwards;
   }
@@ -485,10 +510,29 @@ svg {
       transform: scale(1.2);
     }
     to {
-      transform: translate(50px, -36px) scale(1);
+      transform: translate(50px, -38px) scale(1);
     }
   }
-
+  .dublicateImage2 {
+    position: absolute;
+    left: 59px;
+    top: 22px;
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
+    border-radius: 50%;
+  }
+  @keyframes position2 {
+    to {
+      transform: translate(-136px, 35px) scale(1.2);
+    }
+  }
+  .position2 {
+    position: absolute;
+    left: auto;
+    right: 168px;
+    top: 60px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
   .reverse2 {
     position: relative;
     right: auto;
@@ -512,147 +556,6 @@ svg {
       transform: translate(186px, -36px) scale(1);
     }
   }
-  .reverse3 {
-    position: relative;
-    bottom: 66px;
-    right: 60px;
-  }
-
-  .reverse3-3 {
-    position: relative;
-    bottom: 129px;
-    right: 180px;
-    animation: reverse3-3 0.5s normal 0s 1 forwards;
-  }
-  @keyframes reverse3-3 {
-    from {
-      transform: scale(1.2);
-    }
-    to {
-      transform: translate(120px, 63px) scale(1);
-    }
-  }
-
-  .white {
-    height: 65px;
-    width: 65px;
-    border-top: 4px solid rgba(215, 208, 208, 0.491);
-  }
-
-  img {
-    width: 30px;
-  }
-
-  .image,
-  .dublicateImage1,
-  .dublicateImage2,
-  .dublicateImage3,
-  .dublicateImage4,
-  .dublicateImage5,
-  .dublicateImage6 {
-    height: 88px;
-    width: 88px;
-  }
-
-  .playAgain {
-    height: 50%;
-    position: relative;
-    right: 32px;
-    top: 55px;
-  }
-  .winDraw {
-    font-size: 24px;
-  }
-  .Again {
-    width: 130px;
-    font-size: 15px;
-    padding: 10px;
-  }
-
-  .zero {
-    height: 107px;
-    width: 107px;
-    font-size: 50px;
-    top: 52px;
-    right: auto;
-    left: 50px;
-  }
-  .zero1 {
-    position: relative;
-    left: 20px;
-  }
-  .countBox {
-    animation: countBox 0.25s normal 0s 1 forwards;
-  }
-  @keyframes countBox {
-    to {
-      transform: translateX(64%);
-    }
-  }
-  .dublicateImage4,
-  .dublicateImage5,
-  .dublicateImage6 {
-    background-color: rgba(53, 109, 212, 0.962);
-    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
-    top: 60px;
-    left: 155px;
-    transform: scale(1.2);
-  }
-  .dublicateImage5 {
-    background-color: rgb(226, 167, 5);
-    border-bottom: 4px solid rgb(152, 113, 3);
-  }
-  .dublicateImage6 {
-    background-color: rgb(243, 72, 72);
-    border-bottom: 4px solid rgb(186, 49, 49);
-  }
-
-  .dublicateImage1 {
-    background-color: rgba(53, 109, 212, 0.962);
-    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
-    position: absolute;
-    left: auto;
-    right: 166px;
-    top: 20px;
-  }
-  @keyframes position1 {
-    to {
-      transform: translate(1px, 35px) scale(1.2);
-    }
-  }
-  .position1 {
-    top: 58px;
-    animation: direction 0.25s normal 0s 1 forwards;
-  }
-  @keyframes direction {
-    from {
-      transform: scale(1.2);
-    }
-    to {
-      transform: translate(-50px) scale(1.2);
-    }
-  }
-
-  .dublicateImage2 {
-    position: absolute;
-    left: 59px;
-    top: 22px;
-    background-color: rgb(226, 167, 5);
-    border-bottom: 4px solid rgb(152, 113, 3);
-    border-radius: 50%;
-  }
-  @keyframes position2 {
-    to {
-      transform: translate(-136px, 35px) scale(1.2);
-    }
-  }
-  .position2 {
-    position: absolute;
-    left: auto;
-    right: 168px;
-    top: 60px;
-    animation: direction 0.25s normal 0s 1 forwards;
-  }
   .dublicateImage3 {
     background-color: rgb(243, 72, 72);
     border-bottom: 4px solid rgb(186, 49, 49);
@@ -674,6 +577,96 @@ svg {
     right: 167px;
     animation: direction 0.25s normal 0s 1 forwards;
   }
+}
+.reverse3 {
+  position: relative;
+  bottom: 64px;
+  right: 60px;
+}
+
+.reverse3-3 {
+  position: relative;
+  bottom: 129px;
+  right: 180px;
+  animation: reverse3-3 0.5s normal 0s 1 forwards;
+}
+@keyframes reverse3-3 {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: translate(120px, 65px) scale(1);
+  }
+}
+
+.white {
+  height: 65px;
+  width: 65px;
+  border-top: 4px solid rgba(215, 208, 208, 0.491);
+}
+
+img {
+  width: 30px;
+}
+
+.image,
+.dublicateImage1,
+.dublicateImage2,
+.dublicateImage3,
+.dublicateImage4,
+.dublicateImage5,
+.dublicateImage6 {
+  height: 88px;
+  width: 88px;
+}
+
+.playAgain {
+  height: 50%;
+  position: relative;
+  right: 32px;
+  top: 55px;
+}
+.winDraw {
+  font-size: 24px;
+}
+.Again {
+  width: 130px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.zero {
+  height: 107px;
+  width: 107px;
+  font-size: 50px;
+  top: 52px;
+  right: auto;
+  left: 50px;
+}
+.countBox {
+  animation: countBox 0.25s normal 0s 1 forwards;
+}
+@keyframes countBox {
+  to {
+    transform: translateX(64%);
+  }
+}
+.dublicateImage4,
+.dublicateImage5,
+.dublicateImage6 {
+  background-color: rgba(53, 109, 212, 0.962);
+  border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+  top: 60px;
+  left: 155px;
+  transform: scale(1.2);
+}
+.dublicateImage5 {
+  background-color: rgb(226, 167, 5);
+  border-bottom: 4px solid rgb(152, 113, 3);
+}
+.dublicateImage6 {
+  background-color: rgb(243, 72, 72);
+  border-bottom: 4px solid rgb(186, 49, 49);
 }
 
 @media (min-width: 480px) and (max-width: 780px) {
@@ -800,7 +793,7 @@ svg {
   }
   .reverse1-1 {
     position: relative;
-    top: 65px;
+    top: 69px;
     right: 159px;
     animation: reverse1-1 0.5s normal 0s 1 forwards;
   }
@@ -810,7 +803,7 @@ svg {
       transform: scale(1.2);
     }
     to {
-      transform: translate(54px, -42px) scale(1);
+      transform: translate(54px, -46px) scale(1);
     }
   }
   .dublicateImage2 {

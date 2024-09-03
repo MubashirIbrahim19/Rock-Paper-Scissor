@@ -25,7 +25,6 @@ const reverse3 = document.querySelector(".reverse3");
 const reset = document.querySelector(".reset");
 const Again = document.querySelector(".Again");
 const header = document.querySelector(".header");
-// const score = document.querySelector(".score");
 
 const draw = (computerchoice) => {
   if (computerchoice === "paper") {
@@ -34,8 +33,6 @@ const draw = (computerchoice) => {
       timerBox.classList.add("hide");
       winDraw.innerText = "MATCH DRAW";
       winDraw.style.color = "white";
-      console.log(winDraw.innerText);
-      console.log("\n");
     }, 170);
   } else if (computerchoice === "scissor") {
     setTimeout(() => {
@@ -43,8 +40,6 @@ const draw = (computerchoice) => {
       timerBox.classList.add("hide");
       winDraw.innerText = "MATCH DRAW";
       winDraw.style.color = "white";
-      console.log(winDraw.innerText);
-      console.log("\n");
     }, 170);
   } else {
     setTimeout(() => {
@@ -52,8 +47,6 @@ const draw = (computerchoice) => {
       timerBox.classList.add("hide");
       winDraw.innerText = "MATCH DRAW";
       winDraw.style.color = "white";
-      console.log(winDraw.innerText);
-      console.log("\n");
     }, 170);
   }
 };
@@ -63,22 +56,17 @@ const computerChoice = (myChoice) => {
   let computerChoice2 = compChoice[randomInd];
 
   if (myChoice === computerChoice2) {
-    console.log(`Match Draw ki value ${computerChoice2}`);
     let newValue = Math.random();
-    console.log(newValue);
     if (newValue < 0.5) {
       compChoice = compChoice.filter((choice) => choice !== myChoice);
       randomInd = Math.floor(Math.random() * 2);
       computerChoice2 = compChoice[randomInd];
-      console.log(`Match Draw ki value change ${computerChoice2}`);
     }
   }
-  console.log(randomInd);
   return computerChoice2;
 };
 
 const playGame = (myChoice) => {
-  console.log(myChoice);
   let computerchoice = computerChoice(myChoice);
   if (myChoice === computerchoice) {
     draw(computerchoice);
@@ -93,8 +81,6 @@ const playGame = (myChoice) => {
         your_score.style.color = "green";
         winDraw.innerText = "YOU WIN";
         winDraw.style.color = "rgb(69, 250, 90)";
-        console.log(winDraw.innerText);
-        console.log("\n");
       }, 170);
     } else if (computerchoice === "scissor") {
       setTimeout(() => {
@@ -104,8 +90,6 @@ const playGame = (myChoice) => {
         comp_score.style.color = "rgb(226, 167, 10)";
         winDraw.innerText = "YOU LOSE";
         winDraw.style.color = "red";
-        console.log(winDraw.innerText);
-        console.log("\n");
       }, 170);
     }
   }
@@ -118,8 +102,6 @@ const playGame = (myChoice) => {
         comp_score.style.color = "rgb(226, 167, 10)";
         winDraw.innerText = "YOU LOSE";
         winDraw.style.color = "red";
-        console.log(winDraw.innerText);
-        console.log("\n");
       }, 170);
     } else if (computerchoice === "paper") {
       setTimeout(() => {
@@ -129,8 +111,6 @@ const playGame = (myChoice) => {
         your_score.style.color = "green";
         winDraw.innerText = "YOU WIN";
         winDraw.style.color = "rgb(69, 250, 90)";
-        console.log(winDraw.innerText);
-        console.log("\n");
       }, 170);
     }
   }
@@ -143,8 +123,6 @@ const playGame = (myChoice) => {
         your_score.style.color = "green";
         winDraw.innerText = "YOU WIN";
         winDraw.style.color = "rgb(69, 250, 90)";
-        console.log(winDraw.innerText);
-        console.log("\n");
       }, 170);
     } else if (computerchoice === "paper") {
       setTimeout(() => {
@@ -154,8 +132,6 @@ const playGame = (myChoice) => {
         comp_score.style.color = "rgb(226, 167, 10)";
         winDraw.innerText = "YOU LOSE";
         winDraw.style.color = "red";
-        console.log(winDraw.innerText);
-        console.log("\n");
       }, 170);
     }
   }
@@ -165,11 +141,10 @@ const box = () => {
 };
 images.forEach((image) => {
   image.addEventListener("click", () => {
-    // score.classList.add("scoreLeft");
     header.classList.add("header1");
     header.classList.remove("header2");
     header.classList.remove("header3");
-    // header.style.left = "2px";
+
     let myChoice = image.getAttribute("id");
     setTimeout(() => {
       timerBox.classList.remove("hide");
@@ -254,11 +229,8 @@ images.forEach((image) => {
         reset.classList.remove("hide");
         setTimeout(() => {
           playAgain.classList.remove("hide");
-          zero.classList.add("zero1");
-          console.log(zero);
           header.classList.remove("header1");
           header.classList.add("header2");
-          console.log(header);
         }, 170);
       }
     }, 470);
