@@ -233,6 +233,6 @@ images.forEach((image) => {
           header.classList.add("header2");
         }, 170);
       }
-    }, 470);
+    }, 700);
   });
 });
