@@ -577,96 +577,96 @@ svg {
     right: 167px;
     animation: direction 0.25s normal 0s 1 forwards;
   }
-}
-.reverse3 {
-  position: relative;
-  bottom: 64px;
-  right: 60px;
-}
+  .reverse3 {
+    position: relative;
+    bottom: 64px;
+    right: 60px;
+  }
 
-.reverse3-3 {
-  position: relative;
-  bottom: 129px;
-  right: 180px;
-  animation: reverse3-3 0.5s normal 0s 1 forwards;
-}
-@keyframes reverse3-3 {
-  from {
+  .reverse3-3 {
+    position: relative;
+    bottom: 129px;
+    right: 180px;
+    animation: reverse3-3 0.5s normal 0s 1 forwards;
+  }
+  @keyframes reverse3-3 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(120px, 65px) scale(1);
+    }
+  }
+
+  .white {
+    height: 65px;
+    width: 65px;
+    border-top: 4px solid rgba(215, 208, 208, 0.491);
+  }
+
+  img {
+    width: 30px;
+  }
+
+  .image,
+  .dublicateImage1,
+  .dublicateImage2,
+  .dublicateImage3,
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    height: 88px;
+    width: 88px;
+  }
+
+  .playAgain {
+    height: 50%;
+    position: relative;
+    right: 32px;
+    top: 55px;
+  }
+  .winDraw {
+    font-size: 24px;
+  }
+  .Again {
+    width: 130px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .zero {
+    height: 107px;
+    width: 107px;
+    font-size: 50px;
+    top: 52px;
+    right: auto;
+    left: 50px;
+  }
+  .countBox {
+    animation: countBox 0.25s normal 0s 1 forwards;
+  }
+  @keyframes countBox {
+    to {
+      transform: translateX(64%);
+    }
+  }
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    top: 60px;
+    left: 155px;
     transform: scale(1.2);
   }
-  to {
-    transform: translate(120px, 65px) scale(1);
+  .dublicateImage5 {
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
   }
-}
-
-.white {
-  height: 65px;
-  width: 65px;
-  border-top: 4px solid rgba(215, 208, 208, 0.491);
-}
-
-img {
-  width: 30px;
-}
-
-.image,
-.dublicateImage1,
-.dublicateImage2,
-.dublicateImage3,
-.dublicateImage4,
-.dublicateImage5,
-.dublicateImage6 {
-  height: 88px;
-  width: 88px;
-}
-
-.playAgain {
-  height: 50%;
-  position: relative;
-  right: 32px;
-  top: 55px;
-}
-.winDraw {
-  font-size: 24px;
-}
-.Again {
-  width: 130px;
-  font-size: 15px;
-  padding: 10px;
-}
-
-.zero {
-  height: 107px;
-  width: 107px;
-  font-size: 50px;
-  top: 52px;
-  right: auto;
-  left: 50px;
-}
-.countBox {
-  animation: countBox 0.25s normal 0s 1 forwards;
-}
-@keyframes countBox {
-  to {
-    transform: translateX(64%);
+  .dublicateImage6 {
+    background-color: rgb(243, 72, 72);
+    border-bottom: 4px solid rgb(186, 49, 49);
   }
-}
-.dublicateImage4,
-.dublicateImage5,
-.dublicateImage6 {
-  background-color: rgba(53, 109, 212, 0.962);
-  border-bottom: 4px solid rgba(12, 65, 163, 0.984);
-  top: 60px;
-  left: 155px;
-  transform: scale(1.2);
-}
-.dublicateImage5 {
-  background-color: rgb(226, 167, 5);
-  border-bottom: 4px solid rgb(152, 113, 3);
-}
-.dublicateImage6 {
-  background-color: rgb(243, 72, 72);
-  border-bottom: 4px solid rgb(186, 49, 49);
 }
 
 @media (min-width: 480px) and (max-width: 780px) {
@@ -763,12 +763,13 @@ img {
     border-bottom: 4px solid rgba(12, 65, 163, 0.984);
     position: absolute;
     left: auto;
-    right: 210px;
-    top: 25px;
+    right: 209px;
+    top: 23px;
+    animation: position1 0.5s normal 0s 1 forwards;
   }
   @keyframes position1 {
     to {
-      transform: translate(-10px, 44px) scale(1.2);
+      transform: translate(-11px, 45px) scale(1.2);
     }
   }
   .position1 {
@@ -1058,7 +1059,6 @@ img {
     left: auto;
     right: 261px;
     top: 50px;
-    animation: position1 0.5s normal 0s 1 forwards;
   }
 
   @keyframes position1 {
@@ -1069,7 +1069,6 @@ img {
   .position1 {
     top: 90px;
     right: 268px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
   @keyframes direction {
     from {
@@ -1091,7 +1090,6 @@ img {
     position: relative;
     top: 90px;
     right: 210px;
-    animation: reverse1-1 0.5s normal 0s 1 forwards;
   }
   @keyframes reverse1-1 {
     from {
@@ -1108,7 +1106,6 @@ img {
     background-color: rgb(226, 167, 5);
     border-bottom: 4px solid rgb(152, 113, 3);
     border-radius: 50%;
-    animation: position2 0.5s normal 0s 1 forwards;
   }
   @keyframes position2 {
     to {
@@ -1120,7 +1117,6 @@ img {
     left: auto;
     right: 268px;
     top: 88px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
 
   .reverse2 {
@@ -1134,7 +1130,6 @@ img {
     top: auto;
     bottom: 201px;
     right: 150px;
-    animation: reverse2-2 0.5s normal 0s 1 forwards;
   }
   @keyframes reverse2-2 {
     from {
@@ -1152,7 +1147,6 @@ img {
     position: absolute;
     top: 222px;
     right: 158px;
-    animation: position3 0.5s normal 0s 1 forwards;
   }
   @keyframes position3 {
     to {
@@ -1164,7 +1158,6 @@ img {
     left: auto;
     top: 96px;
     right: 270px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
 
   .reverse3 {
@@ -1177,7 +1170,6 @@ img {
     position: relative;
     bottom: 193px;
     right: 291px;
-    animation: reverse3-3 0.5s normal 0s 1 forwards;
   }
   @keyframes reverse3-3 {
     from {
@@ -1213,7 +1205,6 @@ img {
     position: relative;
     right: 30px;
     top: 90px;
-    /**/
   }
 
   .winDraw {
@@ -1232,10 +1223,6 @@ img {
     font-size: 70px;
     left: 155px;
     top: 67px;
-  }
-
-  .countBox {
-    animation: countBox 0.25s normal 0s 1 forwards;
   }
   @keyframes countBox {
     to {
