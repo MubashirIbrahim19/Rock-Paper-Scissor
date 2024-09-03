@@ -482,7 +482,6 @@ svg {
   }
   .position1 {
     top: 58px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
   @keyframes direction {
     from {
@@ -502,7 +501,6 @@ svg {
     position: relative;
     top: 58px;
     right: 135px;
-    animation: reverse1-1 0.5s normal 0s 1 forwards;
   }
 
   @keyframes reverse1-1 {
@@ -531,7 +529,6 @@ svg {
     left: auto;
     right: 168px;
     top: 60px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
   .reverse2 {
     position: relative;
@@ -545,7 +542,6 @@ svg {
     top: auto;
     bottom: 134px;
     right: 91px;
-    animation: reverse2-2 0.5s normal 0s 1 forwards;
   }
 
   @keyframes reverse2-2 {
@@ -575,7 +571,6 @@ svg {
     top: 63px;
     left: auto;
     right: 167px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
   .reverse3 {
     position: relative;
@@ -587,7 +582,6 @@ svg {
     position: relative;
     bottom: 129px;
     right: 180px;
-    animation: reverse3-3 0.5s normal 0s 1 forwards;
   }
   @keyframes reverse3-3 {
     from {
@@ -641,9 +635,6 @@ svg {
     top: 52px;
     right: auto;
     left: 50px;
-  }
-  .countBox {
-    animation: countBox 0.25s normal 0s 1 forwards;
   }
   @keyframes countBox {
     to {
@@ -765,7 +756,6 @@ svg {
     left: auto;
     right: 209px;
     top: 23px;
-    animation: position1 0.5s normal 0s 1 forwards;
   }
   @keyframes position1 {
     to {
@@ -775,7 +765,6 @@ svg {
   .position1 {
     top: 69px;
     right: 220px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
   @keyframes direction {
     from {
@@ -796,7 +785,6 @@ svg {
     position: relative;
     top: 69px;
     right: 159px;
-    animation: reverse1-1 0.5s normal 0s 1 forwards;
   }
 
   @keyframes reverse1-1 {
@@ -825,7 +813,6 @@ svg {
     left: auto;
     right: 218px;
     top: 70px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
 
   .reverse2 {
@@ -840,7 +827,6 @@ svg {
     top: auto;
     bottom: 153px;
     right: 104px;
-    animation: reverse2-2 0.5s normal 0s 1 forwards;
   }
 
   @keyframes reverse2-2 {
@@ -859,7 +845,6 @@ svg {
     bottom: auto;
     top: 150px;
     right: 121px;
-    animation: position3 0.5s normal 0s 1 forwards;
   }
   @keyframes position3 {
     to {
@@ -871,7 +856,6 @@ svg {
     left: auto;
     top: 72px;
     right: 218px;
-    animation: direction 0.25s normal 0s 1 forwards;
   }
   .reverse3 {
     position: relative;
@@ -883,7 +867,6 @@ svg {
     position: relative;
     bottom: 150px;
     right: 200px;
-    animation: reverse3-3 0.5s normal 0s 1 forwards;
   }
   @keyframes reverse3-3 {
     from {
@@ -937,9 +920,6 @@ svg {
     top: 60px;
     right: auto;
     left: 80px;
-  }
-  .countBox {
-    animation: countBox 0.25s normal 0s 1 forwards;
   }
   @keyframes countBox {
     to {
