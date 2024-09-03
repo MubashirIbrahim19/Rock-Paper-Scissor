@@ -1140,7 +1140,7 @@ svg {
     position: relative;
     top: auto;
     bottom: 201px;
-    right: 149px;
+    right: 150px;
     animation: reverse2-2 0.5s normal 0s 1 forwards;
   }
   @keyframes reverse2-2 {
@@ -1148,7 +1148,7 @@ svg {
       transform: scale(1.3);
     }
     to {
-      transform: translate(292px, -40px) scale(1);
+      transform: translate(293px, -40px) scale(1);
     }
   }
 
