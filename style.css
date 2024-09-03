@@ -123,70 +123,6 @@ body {
   cursor: pointer;
 }
 
-.reverse1 {
-  position: relative;
-  left: 30px;
-}
-.reverse1-1 {
-  position: relative;
-  top: 92px;
-  right: 82px;
-  animation: reverse1-1 0.5s normal 0s 1 forwards;
-}
-
-@keyframes reverse1-1 {
-  from {
-    transform: scale(1.5);
-  }
-  to {
-    transform: translate(112px, -92px) scale(1);
-  }
-}
-.reverse2 {
-  background-color: rgb(226, 167, 5);
-  border-bottom: 4px solid rgb(152, 113, 3);
-  position: relative;
-  right: 203px;
-}
-.reverse2-2 {
-  position: relative;
-  top: 95px;
-  right: 552px;
-  animation: reverse2-2 0.5s normal 0s 1 forwards;
-}
-
-@keyframes reverse2-2 {
-  from {
-    transform: scale(1.5);
-  }
-  to {
-    transform: translate(349px, -95px) scale(1);
-  }
-}
-
-.reverse3 {
-  position: relative;
-  bottom: 169px;
-  right: 80px;
-  background-color: rgb(243, 72, 72);
-  border-bottom: 4px solid rgb(186, 49, 49);
-}
-
-.reverse3-3 {
-  position: relative;
-  bottom: 261px;
-  right: 310px;
-  animation: reverse3-3 0.5s normal 0s 1 forwards;
-}
-@keyframes reverse3-3 {
-  from {
-    transform: scale(1.5);
-  }
-  to {
-    transform: translate(230px, 92px) scale(1);
-  }
-}
-
 .white {
   height: 120px;
   width: 125px;
@@ -266,7 +202,7 @@ svg {
   background-color: rgba(53, 109, 212, 0.962);
   border-bottom: 4px solid rgba(12, 65, 163, 0.984);
   position: absolute;
-  left: 390px;
+  left: 388px;
   animation: position1 0.5s normal 0s 1 forwards;
 }
 @keyframes position1 {
@@ -288,10 +224,28 @@ svg {
     transform: translate(-118px) scale(1.5);
   }
 }
+.reverse1 {
+  position: relative;
+  left: 30px;
+}
+.reverse1-1 {
+  position: relative;
+  top: 92px;
+  right: 82px;
+  animation: reverse1-1 0.5s normal 0s 1 forwards;
+}
 
+@keyframes reverse1-1 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(112px, -92px) scale(1);
+  }
+}
 .dublicateImage2 {
   position: absolute;
-  right: 562px;
+  right: 560px;
   background-color: rgb(226, 167, 5);
   border-bottom: 4px solid rgb(152, 113, 3);
   border-radius: 50%;
@@ -309,14 +263,34 @@ svg {
   top: 300px;
   animation: direction 0.25s normal 0s 1 forwards;
 }
+.reverse2 {
+  background-color: rgb(226, 167, 5);
+  border-bottom: 4px solid rgb(152, 113, 3);
+  position: relative;
+  right: 203px;
+}
+.reverse2-2 {
+  position: relative;
+  top: 95px;
+  right: 552px;
+  animation: reverse2-2 0.5s normal 0s 1 forwards;
+}
 
+@keyframes reverse2-2 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(349px, -95px) scale(1);
+  }
+}
 .dublicateImage3 {
   background-color: rgb(243, 72, 72);
   border-bottom: 4px solid rgb(186, 49, 49);
   border-radius: 50%;
   position: absolute;
-  bottom: 95px;
-  right: 673px;
+  bottom: 87px;
+  right: 672px;
   animation: position3 0.5s normal 0s 1 forwards;
 }
 @keyframes position3 {
@@ -330,7 +304,28 @@ svg {
   left: 395px;
   animation: direction 0.25s normal 0s 1 forwards;
 }
+.reverse3 {
+  position: relative;
+  bottom: 169px;
+  right: 80px;
+  background-color: rgb(243, 72, 72);
+  border-bottom: 4px solid rgb(186, 49, 49);
+}
 
+.reverse3-3 {
+  position: relative;
+  bottom: 261px;
+  right: 310px;
+  animation: reverse3-3 0.5s normal 0s 1 forwards;
+}
+@keyframes reverse3-3 {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: translate(230px, 92px) scale(1);
+  }
+}
 .dublicateImage4,
 .dublicateImage5,
 .dublicateImage6 {
@@ -390,7 +385,18 @@ svg {
     left: 75px;
     top: 10px;
   }
-
+  .header1 {
+    position: relative;
+    left: 2px;
+  }
+  .header2 {
+    position: relative;
+    left: 25px;
+  }
+  .header3 {
+    position: relative;
+    left: 75px;
+  }
   .names {
     height: 70px;
     width: 55px;
@@ -667,5 +673,587 @@ svg {
     left: auto;
     right: 167px;
     animation: direction 0.25s normal 0s 1 forwards;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 780px) {
+  .header {
+    height: 80px;
+    width: 450px;
+    margin-top: 15px;
+    position: relative;
+    left: 75px;
+    top: 15px;
+  }
+  .header1 {
+    position: relative;
+    left: 2px;
+  }
+  .header2 {
+    position: relative;
+    left: 2px;
+  }
+
+  .names {
+    height: 90px;
+    width: 70px;
+    padding-left: 15px;
+  }
+
+  .name1 {
+    font-size: 20px;
+  }
+  .rock {
+    position: relative;
+    top: 5px;
+  }
+
+  .scissor {
+    position: relative;
+    bottom: 5px;
+  }
+  .scores {
+    height: 75px;
+    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .score {
+    height: 65px;
+    width: 100px;
+    position: relative;
+    right: 15px;
+  }
+
+  .score1,
+  .score2 {
+    font-size: 36px;
+  }
+
+  .your-score,
+  .comp-score {
+    font-size: 10px;
+  }
+
+  .reset {
+    position: relative;
+    padding: 0px;
+    left: 15px;
+    top: 20px;
+    font-size: 12px;
+  }
+  .images1 {
+    height: 100%;
+    width: 55%;
+    margin-top: 25px;
+    position: relative;
+    left: 160px;
+  }
+
+  .images2 {
+    height: 250px;
+    width: 600px;
+  }
+  .triangle {
+    height: 45%;
+    width: 70%;
+    position: relative;
+    bottom: 8px;
+    left: auto;
+    right: 20px;
+  }
+
+  .dublicateImage1 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    position: absolute;
+    left: auto;
+    right: 210px;
+    top: 25px;
+  }
+  @keyframes position1 {
+    to {
+      transform: translate(-10px, 44px) scale(1.2);
+    }
+  }
+  .position1 {
+    top: 69px;
+    right: 220px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+  @keyframes direction {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(-43px) scale(1.2);
+    }
+  }
+
+  .reverse1 {
+    position: relative;
+    left: auto;
+    right: 105px;
+    top: 23px;
+  }
+  .reverse1-1 {
+    position: relative;
+    top: 65px;
+    right: 159px;
+    animation: reverse1-1 0.5s normal 0s 1 forwards;
+  }
+
+  @keyframes reverse1-1 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(54px, -42px) scale(1);
+    }
+  }
+  .dublicateImage2 {
+    position: absolute;
+    left: 98px;
+    top: 23px;
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
+    border-radius: 50%;
+  }
+  @keyframes position2 {
+    to {
+      transform: translate(-170px, 45px) scale(1.2);
+    }
+  }
+  .position2 {
+    position: absolute;
+    left: auto;
+    right: 218px;
+    top: 70px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+
+  .reverse2 {
+    position: relative;
+    right: auto;
+    bottom: 200px;
+    left: 112px;
+  }
+
+  .reverse2-2 {
+    position: relative;
+    top: auto;
+    bottom: 153px;
+    right: 104px;
+    animation: reverse2-2 0.5s normal 0s 1 forwards;
+  }
+
+  @keyframes reverse2-2 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(216px, -47px) scale(1);
+    }
+  }
+  .dublicateImage3 {
+    background-color: rgb(243, 72, 72);
+    border-bottom: 4px solid rgb(186, 49, 49);
+    border-radius: 50%;
+    position: absolute;
+    bottom: auto;
+    top: 150px;
+    right: 121px;
+    animation: position3 0.5s normal 0s 1 forwards;
+  }
+  @keyframes position3 {
+    to {
+      transform: translate(-94px, -75px) scale(1.2);
+    }
+  }
+  .position3 {
+    position: absolute;
+    left: auto;
+    top: 72px;
+    right: 218px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+  .reverse3 {
+    position: relative;
+    bottom: 72px;
+    right: 70px;
+  }
+
+  .reverse3-3 {
+    position: relative;
+    bottom: 150px;
+    right: 200px;
+    animation: reverse3-3 0.5s normal 0s 1 forwards;
+  }
+  @keyframes reverse3-3 {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: translate(130px, 78px) scale(1);
+    }
+  }
+
+  .white {
+    height: 80px;
+    width: 80px;
+    border-top: 4px solid rgba(215, 208, 208, 0.491);
+  }
+
+  img {
+    width: 35px;
+  }
+
+  .image,
+  .dublicateImage1,
+  .dublicateImage2,
+  .dublicateImage3,
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    height: 106px;
+    width: 106px;
+  }
+
+  .playAgain {
+    height: 55%;
+    position: relative;
+    right: 40px;
+    top: 65px;
+  }
+  .winDraw {
+    font-size: 28px;
+  }
+  .Again {
+    width: 150px;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .zero {
+    height: 128px;
+    width: 128px;
+    font-size: 55px;
+    top: 60px;
+    right: auto;
+    left: 80px;
+  }
+  .countBox {
+    animation: countBox 0.25s normal 0s 1 forwards;
+  }
+  @keyframes countBox {
+    to {
+      transform: translateX(70%);
+    }
+  }
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    top: 70px;
+    left: 180px;
+    transform: scale(1.2);
+  }
+  .dublicateImage5 {
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
+  }
+  .dublicateImage6 {
+    background-color: rgb(243, 72, 72);
+    border-bottom: 4px solid rgb(186, 49, 49);
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1115px) {
+  .header {
+    height: 100px;
+    width: 600px;
+    margin-top: 20px;
+    position: relative;
+    left: 100px;
+    top: 20px;
+  }
+
+  .header1,
+  .header2 {
+    position: relative;
+    left: 52px;
+  }
+  .names {
+    height: 110px;
+    width: 90px;
+    padding-left: 20px;
+  }
+
+  .name1 {
+    font-size: 24px;
+  }
+
+  .rock {
+    position: relative;
+    top: 8px;
+  }
+
+  .scissor {
+    position: relative;
+    bottom: 8px;
+  }
+
+  .scores {
+    height: 90px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .score {
+    height: 83px;
+    width: 130px;
+  }
+
+  .score1,
+  .score2 {
+    font-size: 44px;
+  }
+
+  .your-score,
+  .comp-score {
+    font-size: 13px;
+  }
+
+  .reset {
+    position: relative;
+    padding: 0px;
+    left: 20px;
+    top: 28px;
+    font-size: 14px;
+  }
+
+  .images1 {
+    height: 100%;
+    width: 60%;
+    margin-top: 30px;
+    position: relative;
+    left: 200px;
+  }
+
+  .images2 {
+    height: 300px;
+    width: 700px;
+  }
+
+  .triangle {
+    height: 40%;
+    width: 70%;
+    margin-top: 25px;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
+  }
+
+  .dublicateImage1 {
+    background-color: rgba(53, 109, 212, 0.962);
+    border-bottom: 4px solid rgba(12, 65, 163, 0.984);
+    position: absolute;
+    left: auto;
+    right: 261px;
+    top: 50px;
+    animation: position1 0.5s normal 0s 1 forwards;
+  }
+
+  @keyframes position1 {
+    to {
+      transform: translate(-10px, 40px) scale(1.3);
+    }
+  }
+  .position1 {
+    top: 90px;
+    right: 268px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+  @keyframes direction {
+    from {
+      transform: scale(1.3);
+    }
+    to {
+      transform: translate(-82px) scale(1.3);
+    }
+  }
+
+  .reverse1 {
+    position: relative;
+    left: auto;
+    right: 130px;
+    top: 50px;
+  }
+
+  .reverse1-1 {
+    position: relative;
+    top: 90px;
+    right: 210px;
+    animation: reverse1-1 0.5s normal 0s 1 forwards;
+  }
+  @keyframes reverse1-1 {
+    from {
+      transform: scale(1.3);
+    }
+    to {
+      transform: translate(80px, -40px) scale(1);
+    }
+  }
+  .dublicateImage2 {
+    position: absolute;
+    left: 160px;
+    top: 48px;
+    background-color: rgb(226, 167, 5);
+    border-bottom: 4px solid rgb(152, 113, 3);
+    border-radius: 50%;
+    animation: position2 0.5s normal 0s 1 forwards;
+  }
+  @keyframes position2 {
+    to {
+      transform: translate(-206px, 40px) scale(1.3);
+    }
+  }
+  .position2 {
+    position: absolute;
+    left: auto;
+    right: 268px;
+    top: 88px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+
+  .reverse2 {
+    position: relative;
+    bottom: 241px;
+    left: 143px;
+  }
+
+  .reverse2-2 {
+    position: relative;
+    top: auto;
+    bottom: 201px;
+    right: 149px;
+    animation: reverse2-2 0.5s normal 0s 1 forwards;
+  }
+  @keyframes reverse2-2 {
+    from {
+      transform: scale(1.3);
+    }
+    to {
+      transform: translate(292px, -40px) scale(1);
+    }
+  }
+
+  .dublicateImage3 {
+    background-color: rgb(243, 72, 72);
+    border-bottom: 4px solid rgb(186, 49, 49);
+    border-radius: 50%;
+    position: absolute;
+    top: 222px;
+    right: 158px;
+    animation: position3 0.5s normal 0s 1 forwards;
+  }
+  @keyframes position3 {
+    to {
+      transform: translate(-110px, -124px) scale(1.3);
+    }
+  }
+  .position3 {
+    position: absolute;
+    left: auto;
+    top: 96px;
+    right: 270px;
+    animation: direction 0.25s normal 0s 1 forwards;
+  }
+
+  .reverse3 {
+    position: relative;
+    bottom: 67px;
+    right: 97px;
+  }
+
+  .reverse3-3 {
+    position: relative;
+    bottom: 193px;
+    right: 291px;
+    animation: reverse3-3 0.5s normal 0s 1 forwards;
+  }
+  @keyframes reverse3-3 {
+    from {
+      transform: scale(1.3);
+    }
+    to {
+      transform: translate(194px, 126px) scale(1);
+    }
+  }
+  .white {
+    height: 107px;
+    width: 107px;
+    border-top: 4px solid rgba(215, 208, 208, 0.491);
+  }
+
+  img {
+    width: 43px;
+  }
+
+  .image,
+  .dublicateImage1,
+  .dublicateImage2,
+  .dublicateImage3,
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    height: 140px;
+    width: 140px;
+  }
+
+  .playAgain {
+    height: 60%;
+    position: relative;
+    right: 30px;
+    top: 90px;
+    /**/
+  }
+
+  .winDraw {
+    font-size: 37px;
+  }
+
+  .Again {
+    width: 190px;
+    font-size: 18px;
+    padding: 13px;
+  }
+
+  .zero {
+    height: 185px;
+    width: 185px;
+    font-size: 70px;
+    left: 155px;
+    top: 67px;
+  }
+
+  .countBox {
+    animation: countBox 0.25s normal 0s 1 forwards;
+  }
+  @keyframes countBox {
+    to {
+      transform: translateX(61%);
+    }
+  }
+  .dublicateImage4,
+  .dublicateImage5,
+  .dublicateImage6 {
+    top: 88px;
+    left: 290px;
+    transform: scale(1.3);
   }
 }

@@ -25,6 +25,7 @@ const reverse3 = document.querySelector(".reverse3");
 const reset = document.querySelector(".reset");
 const Again = document.querySelector(".Again");
 const header = document.querySelector(".header");
+// const score = document.querySelector(".score");
 
 const draw = (computerchoice) => {
   if (computerchoice === "paper") {
@@ -164,7 +165,11 @@ const box = () => {
 };
 images.forEach((image) => {
   image.addEventListener("click", () => {
-    header.style.left = "2px";
+    // score.classList.add("scoreLeft");
+    header.classList.add("header1");
+    header.classList.remove("header2");
+    header.classList.remove("header3");
+    // header.style.left = "2px";
     let myChoice = image.getAttribute("id");
     setTimeout(() => {
       timerBox.classList.remove("hide");
@@ -173,20 +178,16 @@ images.forEach((image) => {
     reset.classList.add("hide");
     if (myChoice === "paper") {
       image1.classList.remove("hide");
-      image2.classList.add("hide");
-      image3.classList.add("hide");
     } else if (myChoice === "scissor") {
       image2.classList.remove("hide");
-      image1.classList.add("hide");
-      image3.classList.add("hide");
     } else {
       image3.classList.remove("hide");
-      image1.classList.add("hide");
-      image2.classList.add("hide");
     }
 
     const restart1 = () => {
-      header.style.left = "75px";
+      header.classList.add("header3");
+      header.classList.remove("header2");
+      header.classList.remove("header1");
       if (myChoice === "paper") {
         reverse1.classList.remove("reverse1");
         reverse1.classList.add("reverse1-1");
@@ -253,8 +254,11 @@ images.forEach((image) => {
         reset.classList.remove("hide");
         setTimeout(() => {
           playAgain.classList.remove("hide");
-          header.style.left = "25px";
           zero.classList.add("zero1");
+          console.log(zero);
+          header.classList.remove("header1");
+          header.classList.add("header2");
+          console.log(header);
         }, 170);
       }
     }, 470);
